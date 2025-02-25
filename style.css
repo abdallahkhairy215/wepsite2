@@ -1,0 +1,611 @@
+body,html{
+  overflow-x: hidden;
+  max-width: 100%;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #eff1f3;
+  direction: rtl;
+  /* overflow-x: hidden; */
+}
+
+#salesDetailsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#salesDetailsList li {
+  margin: 10px 0;
+  font-size: 13px;
+  color: #333;
+}
+
+#salesDetailsList li strong {
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: #1c2230;
+  /* display: flex; */
+  min-height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+.drop {
+  background-color: #2a2f3a;
+  border-radius: 10px;
+  padding: 10px 0;
+  border: 1px solid #444d59;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.drop-item {
+  color: #ffffff;
+  padding: 12px 20px;
+
+}
+
+.drop-item:hover {
+  background-color: #3a4450;
+  color: #ffffff;
+}
+
+.drop.show {
+  display: block;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.sidebar {
+  height: calc(100vh - 60px);
+  background: #eff1f3;
+  overflow: hidden;
+  position: relative;
+}
+.offcanvas{
+  background: #eff1f3;
+}
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #1c2230;
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: #eff1f3;
+  border-radius: 4px;
+}
+
+.content {
+  background: #eff1f3;
+}
+
+/* .row{
+  margin-right: 0;
+  margin-left: 0;
+}
+.container-fluid{
+  padding-right: 0;
+  padding-left: 0;
+} */
+
+.sidebar .lista li {
+  margin-right: -38px;
+}
+
+.sidebar .lista li,
+.sidebar .lista {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.lista {
+  cursor: pointer;
+}
+.sidebar .lista:hover,
+.asas li:hover {
+  background: #e0e0e0;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 6px 50px 6px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  color: #333;
+  outline: none;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #5cb85c;
+  background-color: #d3d3d3;
+}
+
+.search-input::placeholder {
+  color: #555;
+}
+
+.search-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.search-btn:hover {
+  color: #0d6efd;
+}
+
+.lista {
+  position: relative;
+}
+
+.triangle,
+.triangle2,
+.triangle3 {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #1c2230;
+  position: absolute;
+  left: 5px;
+  transition: 0.4s;
+}
+
+/*.triangle{
+  margin-right: 150px;
+}
+.triangle2 {
+  margin-right: 142px;
+}
+.triangle3 {
+
+  margin-right: 156px;
+}*/
+#Asas,
+#Asas2,
+#Asas3 {
+  cursor: pointer;
+}
+
+.ul_side li {
+  color: black;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.ul_side li:hover{
+  background: #e0e0e0;
+}
+
+.asas li {
+  font-size: 14px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.asas a {
+  text-decoration: none;
+  color: black;
+}
+.offcanvas{
+  padding-right: 20px;
+  padding-left: 25px;
+}
+.content {
+  position: relative;
+}
+
+.add_fatora {
+  float: left;
+}
+
+td {
+  padding: 0px;
+}
+
+.grey_tr {
+  background: #eff1f3;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.custom-select {
+  float: left;
+  font-size: 12px;
+  max-width: 100px;
+  border: 1px solid #ababab;
+  direction: ltr;
+}
+
+.custom-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  border-color: #0d6efd;
+}
+
+tr {
+  font-size: 14px;
+  font-weight: 100;
+
+}
+
+th {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+span {
+  font-size: 3em;
+  color: #373b45;
+  /*font-weight: 600;*/
+}
+
+.datepicker {
+  z-index: 9999 !important;
+}
+
+.form-control {
+  height: 38px;
+}
+
+.date-picker-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.datepicker {
+  background-color: #1c2230;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.datepicker table {
+  width: 100%;
+}
+
+.datepicker th,
+.datepicker td {
+  padding: 8px;
+  text-align: center;
+
+}
+
+.datepicker th {
+  background-color: #1c2230;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.datepicker td:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.datepicker tbody td:hover,
+th:hover {
+  color: black;
+}
+
+.datepicker .prev,
+.datepicker .next {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.datepicker .prev:hover,
+.datepicker .next:hover {
+  color: black;
+}
+
+.form-label {
+  font-size: 14px;
+}
+
+.form-control {
+  height: 30px;
+  font-size: 14px;
+
+}
+
+.list-group-item,
+.form-control {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.list-group-item:hover {
+  background: #e0e0e0;
+}
+
+
+
+
+
+.icon-container,
+.icon-container2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.icon-name1,
+.icon-name2 {
+  display: none;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.4s;
+}
+
+.icon-container:hover .icon-name1 {
+  display: block;
+}
+
+.icon-container2:hover .icon-name2 {
+  display: block;
+}
+
+.icon-container,
+.icon-container2 {
+  background: #ffffff;
+}
+
+.icon-container:hover,
+.icon-container2:hover {
+  background: #1c2230;
+  color: #ffffff;
+}
+
+.icons,
+.icons2 {
+  font-size: 13px;
+}
+
+
+.con-table::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.con-table::-webkit-scrollbar-thumb {
+  background-color: #1c2230;
+  border-radius: 4px;
+}
+
+/*.con-table::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3;
+}*/
+
+.con-table::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+
+
+.icon {
+  background: #e0e0e0;
+  color: black;
+  transform: scale(0.9);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.icon:hover {
+  box-shadow: 0 4px 8px rgb(0 0 0 / 50%);
+
+}
+
+.card {
+  transform: scale(0.95);
+}
+
+.card div span {
+  font-size: 14px;
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card div span:hover {
+  background: #e0e0e0;
+}
+
+.card-body span {
+  font-size: 12px;
+}
+
+.div_table {
+  max-height: 90%;
+  /* overflow: hidden; */
+  overflow-y: auto;
+}
+
+.div_table::-webkit-scrollbar {
+  width: 8px;
+}
+
+.div_table::-webkit-scrollbar-thumb {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.div_table::-webkit-scrollbar-track {
+  background-color: #eff1f3;
+  border-radius: 4px;
+}
+
+.table_taqrir {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  /* margin-top: 20px; */
+}
+
+.table_taqrir th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table_taqrir th {
+  background-color: #f2f2f2;
+}
+
+.time,
+.client,
+.btns {
+  display: none;
+}
+.table_menu {
+  position: absolute !important; 
+  transform: translate3d(0px, 0px, 0px) !important;
+  z-index: 1050 !important;
+  left: 0 !important;
+  right: auto !important;
+  min-width: 150px; /* تأكد من أن القائمة لها عرض مناسب */
+  white-space: nowrap; /* منع انكسار النص */
+}
+
+#myTable {
+  position: relative; /* يضمن أن القائمة تظهر فوق الجدول */
+  overflow: visible !important; /* يجعل المحتوى يظهر فوق الجدول */
+}
+
+.input-search2{
+
+  border-style: none;
+  /* padding: 10px; */
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: rgb(57, 56, 56);
+  padding-right: 40px;
+  color:black;
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid grey;
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  cursor: pointer;
+}
+
+
+.ul_margin{
+  padding: 3px;
+}
+
+.card-data{
+  border-radius: 6px;
+  /* width: 275px; */
+  transform: scale(0.95);
+  overflow: hidden;
+  background: #ffffff;
+  height: 70px;
+  /* box-shadow: 0 4px 8px rgb(0 0 0 / 50%); */
+  border: 1px solid #dee2e6; 
+  transition: 0.3s;
+}
+.card-data:hover{
+  transform: scale(1);
+}
+.card-data .row{
+  height: 100%;
+  padding: 5px;
+}
+.logo_container{
+  height: 90%;
+  margin-top: 2px;
+  display: grid;
+  padding: 10px;
+  place-items: center;
+  background: #f2f2f7;
+  border-radius: 6px;
+  font-size: 23px;
+  border: 1px solid #dee2e6; 
+
+
+}
+
+.data_card span{
+  margin: 5px;
+  font-size: 13px;
+  display: block;
+}
